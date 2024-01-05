@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(36, 36, 36);
+}
+
+.rounded-box {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #707070; /* Optional: Set background color */
+  margin-right: 0.5%;
+  color: aliceblue;
+}
+
+/* Apply rounded edges to a button */
+.rounded-button {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #00fd61; /* Optional: Set background color */
+  color: #00fd61; /* Optional: Set text color */
+  cursor: pointer; /* Optional: Add pointer cursor for better interaction */
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.player-input {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.player-card-box {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #707070; /* Optional: Set background color */
+  margin-right: 0.5%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  align-items: center; 
+  margin-top: 50px;
+}
+
+/* Optional styling for better visual appearance */
+.player-cards {
+  display: flex;
+  flex-direction: column; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.link-card-box {
+  display: flex;
+  flex-direction: column; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+}
+
+.team-card-box {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #bdd109; /* Optional: Set background color */
+  margin-right: 0.5%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50px;
+  align-items: center; 
+  margin-top: 50px;
+  font-size: small;
+  text-align: center;
+}
