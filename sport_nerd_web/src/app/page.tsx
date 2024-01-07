@@ -7,6 +7,7 @@ import TeamCard, { TeamCardProps } from '@/component/TeamCard';
 import LinkCard, { LinkCardProps } from '@/component/LinkCard';
 import { LinkProps } from 'next/link';
 import MessagePopup, { PopupProps } from '@/component/MessagePopup';
+import Timer from '@/component/Timer';
 
 let teamLinkMap = new Map<string, number>();
 let playersGuessedSet = new Set<string>();
@@ -152,7 +153,18 @@ export default function Home() {
 
 
   return (
-    <main >
+    <main>
+      <div className="game-header-container">
+        <div className="game-player">
+          Player 1
+        </div>
+        <div className="game-header-spacer"></div>
+        <Timer/>
+        <div className="game-header-spacer"></div>
+        <div className="game-player">
+          Player 2
+        </div>
+      </div>
       <div className="player-input">
         <PlayerInput onFindPlayerLink={findPlayerLink} currentPlayer={currentPlayerName} />
       </div>

@@ -8,8 +8,6 @@ export interface TeamCardProps {
 }
 
 export default function TeamCard({ name, xNumber }: TeamCardProps) {
-  // State to manage the text color
-  const [textColor0, setTextColor0] = useState('#353535');
 
   const [xSpanArr, setXSpanArr] = useState<React.ReactElement[]>([]);
 
@@ -21,7 +19,7 @@ export default function TeamCard({ name, xNumber }: TeamCardProps) {
     });
 
     setXSpanArr(updatedXSpanArr);
-  }, [xNumber, textColor0]);
+  }, [xNumber]);
 
   let timesUsed = "";
   let count = teamMap.get(name) ?? 0;

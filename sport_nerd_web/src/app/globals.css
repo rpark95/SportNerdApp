@@ -29,7 +29,7 @@ body {
 .player-input {
   display: flex;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .player-card-box {
@@ -112,4 +112,21 @@ body {
 .message-popup-close {
   margin-bottom: 2%;
   color:aliceblue;
+}
+
+.game-header-container {
+  display: flex;
+  flex-direction: row; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+  padding: 5px;
+  margin-top: 2%;
+}
+
+.game-player, .game-timer {
+  padding: 5px;
+}
+
+.game-header-spacer {
+  width: 200px;
 }
