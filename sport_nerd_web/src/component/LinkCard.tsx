@@ -1,11 +1,11 @@
 import { useState } from "react";
-import PlayerCard, { CardProps } from "./PlayerCard";
-import TeamCard from "./TeamCard";
+import PlayerCard, { PlayerCardProps } from "./PlayerCard";
+import TeamCard, { TeamCardProps } from "./TeamCard";
 
 export interface LinkCardProps {
     key: number;
-    playerCard: React.ReactElement<CardProps>;
-    teamCards: React.ReactElement<CardProps>[];
+    playerCard: React.ReactElement<PlayerCardProps>;
+    teamCards: React.ReactElement<TeamCardProps>[];
 }
 
 export default function LinkCard({ playerCard, teamCards}: LinkCardProps) {

@@ -1,9 +1,39 @@
-import { CardProps } from "./PlayerCard";
+import { useEffect, useState } from "react";
+import { MAX_TEAM_GUESSES } from "@/app/page";
 
-export default function TeamCard({ name }: CardProps ) {
-    return (
-        <div className="team-card-box">
-          {name}
-        </div>
-      );
+let teamMap = new Map<string, number>();
+export interface TeamCardProps {
+  name: string;
+  xNumber: number;
+}
+
+export default function TeamCard({ name, xNumber }: TeamCardProps) {
+  // State to manage the text color
+  const [textColor0, setTextColor0] = useState('#353535');
+
+  const [xSpanArr, setXSpanArr] = useState<React.ReactElement[]>([]);
+
+  useEffect(() => {
+    // Update X spans based on xNumber
+    const updatedXSpanArr = Array.from({ length: MAX_TEAM_GUESSES }, (_, i) => {
+      const xSpanColor = i < xNumber ? '#010101' : '#353535'; // Change color conditionally
+      return <span key={i} style={{ color: xSpanColor }}>X</span>;
+    });
+
+    setXSpanArr(updatedXSpanArr);
+  }, [xNumber, textColor0]);
+
+  let timesUsed = "";
+  let count = teamMap.get(name) ?? 0;
+  teamMap.set(name, count + 1);
+  count = count + 1;
+
+  console.log("Count " + count);
+
+  return (
+    <div className="team-card-box">
+      <div className="team-card-name">{name}</div>
+      <div className="team-card-x">{xSpanArr}</div>
+    </div>
+  );
 }

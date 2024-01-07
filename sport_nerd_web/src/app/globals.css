@@ -41,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   width: 200px;
-  height: 50px;
+  height: 75px;
   align-items: center; 
   margin-top: 50px;
 }
@@ -65,15 +65,51 @@ body {
 .team-card-box {
   border-radius: 10px; /* You can adjust the value to control the roundness */
   padding: 5px; /* Optional: Add padding for better visual appearance */
-  background-color: #bdd109; /* Optional: Set background color */
+  background-color: #4b4a4a; /* Optional: Set background color */
   margin-right: 0.5%;
   color: aliceblue;
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 80%;
   height: 50px;
   align-items: center; 
   margin-top: 50px;
-  font-size: small;
+  font-size:medium;
   text-align: center;
+}
+
+.team-card-name {
+  padding: 5px
+}
+
+.team-card-x {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.message-popup-container {
+  display: flex;
+  flex-direction: row; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+}
+
+.message-popup-content {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #707070; /* Optional: Set background color */
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  align-items: center; 
+  margin-top: 15px;
+  white-space: pre-line;
+  text-align: center;
+}
+
+.message-popup-close {
+  margin-bottom: 2%;
+  color:aliceblue;
 }
