@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(36, 36, 36);
+}
+
+.game-header-container {
+  display: flex;
+  flex-direction: row; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+}
+
+.rounded-box {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #707070; /* Optional: Set background color */
+  margin-right: 0.5%;
+  color: aliceblue;
+}
+
+/* Apply rounded edges to a button */
+.rounded-button {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #00fd61; /* Optional: Set background color */
+  color: #00fd61; /* Optional: Set text color */
+  cursor: pointer; /* Optional: Add pointer cursor for better interaction */
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.player-input {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.player-card-box {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #707070; /* Optional: Set background color */
+  margin-right: 0.5%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 75px;
+  align-items: center; 
+  margin-top: 50px;
+}
+
+/* Optional styling for better visual appearance */
+.player-cards {
+  display: flex;
+  flex-direction: column; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.link-card-box {
+  display: flex;
+  flex-direction: column; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+}
+
+.team-card-box {
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  background-color: #4b4a4a; /* Optional: Set background color */
+  margin-right: 0.5%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 50px;
+  align-items: center; 
+  margin-top: 50px;
+  font-size:medium;
+  text-align: center;
+}
+
+.team-card-name {
+  padding: 5px
+}
+
+.team-card-x {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.message-popup-container {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top:0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5%;
+  margin-bottom:auto;
+  width: 30%;
+  height: 30%;
+  background-color: red;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.message-popup-content {
+  
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  
+  color: aliceblue;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  align-items: center; 
+  margin-top: 0%;
+  white-space: pre-line;
+  text-align: center;
+}
+
+.message-popup-text {
+  /* Add some spacing between text and buttons */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.message-popup-button {
+  /* Display buttons side by side */
+  display: flex;
+  gap: 10px; /* Adjust the spacing between buttons */
+}
+
+.homepage-button {
+  /* Center the buttons */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage-rounded-button {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px; /* Add margin to create a gap between buttons */
+  background-color: #ee8b09; /* Adjust the background color */
+  color: #fff; /* Adjust the text color */
+  border: none;
+  cursor: pointer;
+  width: 250px;
+}
+
+/* Add hover effect for buttons if desired */
+.homepage-rounded-button:hover {
+  background-color: #b46600; /* Adjust the hover background color */
+}
+
+.message-popup-close {
+  margin-bottom: 2%;
+  color:aliceblue;
+}
+
+/* Add styling for rounded buttons */
+.message-rounded-button {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #3498db; /* Adjust the background color */
+  color: #fff; /* Adjust the text color */
+  border: none;
+  cursor: pointer;
+  width: 150px;
+
+}
+
+/* Add hover effect for buttons if desired */
+.message-rounded-button:hover {
+  background-color: #2980b9; /* Adjust the hover background color */
+}
+
+.game-header-content {
+  display: flex;
+  flex-direction:row; /* Display children vertically */
+  align-items: center; /* Align children to the start (left) */
+  justify-content: center;
+  padding: 5px;
+  margin-top: 2%;
+  background-color: #707070;
+  border-radius: 10px; /* You can adjust the value to control the roundness */
+  padding: 5px; 
+  width: 75%;
+}
+
+.game-player, .game-timer {
+  padding: 5px;
+  color:aliceblue;
+}
+
+.game-header-spacer {
+  width: 400px;
+}
